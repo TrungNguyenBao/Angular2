@@ -1,3 +1,82 @@
-<h1>
-  {{title}}
-</h1>
+<section>
+  <h1>Welcom to Angular2 Application</h1>
+  <ul class="nav nav-pills">
+    <li><a routerLink="">Home</a> </li>
+    <li><a routerLink="employees">Employess List</a> </li>
+  </ul>
+</section>
+<router-outlet></router-outlet>
+<section>
+  Foooter
+</section>
+<!--
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" action="" method="" role="form">
+  <legend>Form title</legend>
+  <div class="form-group">
+    <label for="">Name</label>
+    <input type="text" class="form-control" minlength="6" maxlength="12" required #name="ngModel" name="name" placeholder="Input field"
+      ngModel>
+    <div *ngIf="name.errors && (name.dirty || name.touched)" class="alert alert-danger">
+      <div [hidden]="!name.errors.required">
+        Name is required!
+      </div>
+      <div [hidden]="!name.errors.minlength">
+        Name must be at leat 6 characters.
+      </div>
+      <div [hidden]="!name.errors.maxlength">
+        Name connot has more than 10 characters.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="">Email</label>
+    <input type="text" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" class="form-control" required #email="ngModel"
+      name="email" placeholder="Input field" ngModel>
+    <div *ngIf="email.errors && (email.dirty || email.touched)" class="alert alert-danger">
+      <div [hidden]="!email.errors.required">
+        Email is required!
+      </div>
+      <div [hidden]="!email.errors.pattern">
+        Email is invalid!- exemple@exemple.com.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="">Sex</label>
+    <select required class="form-control" ngModel name="cityName">
+      <option *ngFor="let sex of sexs" [value]="sex.id">{{sex.name}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="">Street</label>
+    <input type="text" class="form-control" required id="" #street="ngModel" name="street" placeholder="Input field" ngModel>
+    <div *ngIf="street.errors && (street.dirty || street.touched)" class="alert alert-danger">
+      <div [hidden]="!street.errors.required">
+        Street is required!
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="">City</label>
+    <input type="text" class="form-control" required id="" #city="ngModel" name="city" placeholder="Input field" ngModel>
+    <div *ngIf="city.errors && (city.dirty || city.touched)" class="alert alert-danger">
+      <div [hidden]="!city.errors.required">
+        City is required!
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="">PostCode</label>
+    <input type="text" class="form-control" pattern="^[1-9][0-9]{4}$" required id="" #postcode="ngModel" name="postcode" placeholder="Input field"
+      ngModel>
+    <div *ngIf="postcode.errors && (postcode.dirty || postcode.touched)" class="alert alert-danger">
+      <div [hidden]="!postcode.errors.required">
+        PostCode is required!
+      </div>
+      <div [hidden]="!postcode.errors.pattern">
+        PostCode code must be have 5 digits!
+      </div>
+    </div>
+  </div>
+  <button type="submit" [disabled]="userForm.valid" class="btn btn-primary">Submit</button>
+</form>-->
