@@ -9,13 +9,15 @@ import { HeaderComponent } from './header/header.component';
 import { EmployeeServices } from '../services/employees.services';
 import { appRoute } from './app.route';
 import { HomeComponent } from './home.component';
+import { NotFoundComponent } from './notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OmiComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
