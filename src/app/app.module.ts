@@ -13,7 +13,9 @@ import { NotFoundComponent } from './notfound.component';
 import { EmployDetailComponent } from './employees-detail.component';
 import { EmployeesTabOneComponent } from './employees-tab-one/employees-tab-one.component';
 import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.component';
-
+import { LoginComponent } from './login-component/login-component.component';
+import { LoginSevices } from '../services/login.services';
+import { CheckLoginGuards } from './guards/check-login.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.
     EmployeesTabOneComponent,
     EmployeesTabTwoComponent,
     EmployeesTabOneComponent,
-    EmployeesTabTwoComponent
+    EmployeesTabTwoComponent,
+    LoginComponent
+
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,7 @@ import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.
     HttpModule,
     appRoute
   ],
-  providers: [EmployeeServices],
+  providers: [EmployeeServices,LoginSevices,CheckLoginGuards],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
