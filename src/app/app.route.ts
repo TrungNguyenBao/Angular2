@@ -8,6 +8,7 @@ import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.
 import { LoginComponent } from './login-component/login-component.component';
 import { HomeComponent } from './home.component';
 import { CheckLoginGuards } from './guards/check-login.guard';
+import { CheckSaveFormGuard } from './guards/check-login-derective.component';
 
 const routing: Routes = [
     { path: '', component: HomeComponent },
@@ -16,7 +17,7 @@ const routing: Routes = [
     { path: 'login', component: LoginComponent },
 
     {
-        path: 'employee-detail/:id', component: EmployDetailComponent,
+        path: 'employee-detail/:id', component: EmployDetailComponent,canDeactivate:[CheckSaveFormGuard],
 
         children: [
             { path: '', redirectTo: "tabone", pathMatch: 'full' },

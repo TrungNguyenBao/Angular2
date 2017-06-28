@@ -16,6 +16,7 @@ import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.
 import { LoginComponent } from './login-component/login-component.component';
 import { LoginSevices } from '../services/login.services';
 import { CheckLoginGuards } from './guards/check-login.guard';
+import { CheckSaveFormGuard } from './guards/check-login-derective.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +25,6 @@ import { CheckLoginGuards } from './guards/check-login.guard';
     HomeComponent,
     NotFoundComponent, 
     EmployDetailComponent,
-    EmployeesTabOneComponent,
-    EmployeesTabTwoComponent,
     EmployeesTabOneComponent,
     EmployeesTabTwoComponent,
     LoginComponent
@@ -37,7 +36,7 @@ import { CheckLoginGuards } from './guards/check-login.guard';
     HttpModule,
     appRoute
   ],
-  providers: [EmployeeServices,LoginSevices,CheckLoginGuards],
+  providers: [EmployeeServices,LoginSevices,CheckLoginGuards,CheckSaveFormGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
