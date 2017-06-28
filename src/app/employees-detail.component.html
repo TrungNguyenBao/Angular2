@@ -1,0 +1,27 @@
+
+<table class="table table-hover" *ngIf="emp">
+    <tbody>
+        <tr>
+            <td>ID</td>
+            <td>{{emp.id}}</td>
+        </tr>
+         <tr>
+            <td>Name</td>
+            <td>{{emp.name}}</td>
+        </tr>
+         <tr>
+            <td>Age</td>
+            <td>{{emp.age}}</td>
+        </tr>
+         <tr>
+            <td>Created At</td>
+            <td>{{emp.createdAt}}</td>
+        </tr>
+        <tr><td>
+             <button type="button" class="btn btn-primary" [routerLink]="['tabone']">Tab One</button>   
+              <button type="button" class="btn btn-primary" [routerLink]="['tabtwo']">Tab Two</button>   
+            <button type="button" class="btn btn-default" [routerLink]="['/employees']">Go back</button>    
+        </td></tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>

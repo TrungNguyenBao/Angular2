@@ -13,8 +13,10 @@
       <td>{{emp.name}}</td>
       <td>{{emp.age}}</td>
       <td>{{emp.createdAt | date}}</td>
-      <td><button type="button">Edit</button>
-      <button type="button">Delete</button></td>
+      <td>
+        <button [routerLink]="['/employee-detail',emp.id]" type="button">Edit</button>
+        <button type="button">Delete</button>
+      </td>
     </tr>
   </tbody>
 </table>

@@ -10,6 +10,9 @@ import { EmployeeServices } from '../services/employees.services';
 import { appRoute } from './app.route';
 import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './notfound.component';
+import { EmployDetailComponent } from './employees-detail.component';
+import { EmployeesTabOneComponent } from './employees-tab-one/employees-tab-one.component';
+import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,12 @@ import { NotFoundComponent } from './notfound.component';
     OmiComponent,
     HeaderComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EmployDetailComponent,
+    EmployeesTabOneComponent,
+    EmployeesTabTwoComponent,
+    EmployeesTabOneComponent,
+    EmployeesTabTwoComponent
   ],
   imports: [
     BrowserModule,
