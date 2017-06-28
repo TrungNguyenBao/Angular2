@@ -1,0 +1,29 @@
+<form method="POST" #f="ngForm" (ngSubmit)="add()" >
+  <table class="table table-hover" >
+  <tbody>
+    <tr>
+      <td>Name</td>
+       <input type="hidden" name="id" ngModel [(ngModel)]="emp.id">
+      <td><input type="text" name="name" ngModel [(ngModel)]="emp.name"></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td><input type="number" name="age" ngModel [(ngModel)]="emp.age"></td>
+    </tr>
+    <tr>
+      <td>Created At</td>
+      <td><input type="text" name="createdAt" ngModel [(ngModel)]="emp.createdAt"></td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td><input type="checkbox" name="status" ngModel [(ngModel)]="emp.status"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" (click)="goHome()" class="btn btn-primary">Cancel</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</form>

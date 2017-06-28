@@ -10,13 +10,15 @@ import { EmployeeServices } from '../services/employees.services';
 import { appRoute } from './app.route';
 import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './notfound.component';
-import { EmployDetailComponent } from './employees-detail.component';
-import { EmployeesTabOneComponent } from './employees-tab-one/employees-tab-one.component';
-import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.component';
 import { LoginComponent } from './login-component/login-component.component';
 import { LoginSevices } from '../services/login.services';
 import { CheckLoginGuards } from './guards/check-login.guard';
 import { CheckSaveFormGuard } from './guards/check-login-derective.component';
+import { EmployDetailComponent } from './employees/employees-detail.component';
+import { EmployeesTabOneComponent } from './employees/employees-tab-one/employees-tab-one.component';
+import { EmployeesTabTwoComponent } from './employees/employees-tab-two/employees-tab-two.component';
+import { EmployeesEditComponent } from './employees/employees-edit/employees-edit.component';
+import { EmployeesAddComponent } from './employees/employees-add/employees-add.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,9 +27,12 @@ import { CheckSaveFormGuard } from './guards/check-login-derective.component';
     HomeComponent,
     NotFoundComponent, 
     EmployDetailComponent,
+    LoginComponent,
     EmployeesTabOneComponent,
     EmployeesTabTwoComponent,
-    LoginComponent
+    EmployeesTabTwoComponent,
+    EmployeesEditComponent,
+    EmployeesAddComponent
 
   ],
   imports: [

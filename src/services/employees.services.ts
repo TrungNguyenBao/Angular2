@@ -12,6 +12,15 @@ export class EmployeeServices {
         return this._http.get(this.urlApi).map(response => response.json());
     }
     getSingle(id: number): Observable<any> {
-         return this._http.get(this.urlApi + id).map(response => response.json());
-    } 
+        return this._http.get(this.urlApi + id).map(response => response.json());
+    }
+    add(data: any): Observable<any> {
+        return this._http.post(this.urlApi, data).map(response => response.json());
+    }
+    update(id: number, data: any): Observable<any> {
+        return this._http.put(this.urlApi + id, data).map(response => response.json());
+    }
+    delete(id: number): Observable<any> {
+        return this._http.delete(this.urlApi + id).map(response => response.json());
+    }
 } 
