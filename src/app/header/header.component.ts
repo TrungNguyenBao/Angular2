@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   public pages: number[];
   public currentPage: number;
   public subscription: Subscription;
-  public _id: number;
+  public keyword: string;
   constructor(
     private employeeServices: EmployeeServices,
     private router: Router,
@@ -41,6 +41,16 @@ export class HeaderComponent implements OnInit {
       })
     }
   }
+
+  Search() {
+    this.employeeServices.search(this.keyword).subscribe((response: any) => {
+      this.employees = response;
+    }, error => {
+      console.log(error);
+    });
+  }
+
+
   loadData() {
     this.employeeServices.getList().subscribe((response: any) => {
       this.employees = response;

@@ -23,4 +23,7 @@ export class EmployeeServices {
     delete(id: number): Observable<any> {
         return this._http.delete(this.urlApi + id).map(response => response.json());
     }
+    search(keyword: string): Observable<any> {
+        return this._http.get(this.urlApi+ "?search=" + keyword).map(response => response.json());
+    }
 } 
