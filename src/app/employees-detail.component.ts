@@ -22,7 +22,7 @@ export class EmployDetailComponent implements OnInit, OnDestroy {
     }
     goHome() {
         this.router.navigate(['employees']);
-    }
+    } 
     ngOnDestroy() {
         this.subscription.unsubscribe();
     }

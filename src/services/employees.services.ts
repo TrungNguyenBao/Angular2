@@ -14,4 +14,4 @@ export class EmployeeServices {
     getSingle(id: number): Observable<any> {
         return this._http.get(this.urlApi + id).map(response => response.json());
     }
-}
+} 

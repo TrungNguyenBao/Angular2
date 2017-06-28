@@ -11,7 +11,7 @@ export class EmployeesTabOneComponent implements OnInit, OnDestroy {
   public parentId: number;
   public sub: Subscription;
   constructor(private router: Router, private activatedRouter: ActivatedRoute) { }
-
+  
   ngOnInit() {
     this.sub = this.activatedRouter.parent.params.subscribe(params => {
       this.parentId = params['id'];

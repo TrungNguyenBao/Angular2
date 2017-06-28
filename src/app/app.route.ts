@@ -16,7 +16,7 @@ import{HomeComponent}  from './home.component';
         {path:'',redirectTo:"tabone",pathMatch:'full'},
         {path:'tabone',component:EmployeesTabOneComponent},
         {path :'tabtwo',component:EmployeesTabTwoComponent}
-    ]    
+    ]     
 },
     {path:'**', component:NotFoundComponent}
 ]

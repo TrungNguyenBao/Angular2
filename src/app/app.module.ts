@@ -20,7 +20,7 @@ import { EmployeesTabTwoComponent } from './employees-tab-two/employees-tab-two.
     OmiComponent,
     HeaderComponent,
     HomeComponent,
-    NotFoundComponent,
+    NotFoundComponent, 
     EmployDetailComponent,
     EmployeesTabOneComponent,
     EmployeesTabTwoComponent,
