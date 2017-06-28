@@ -5,6 +5,6 @@ import { EmployDetailComponent } from '../employees-detail.component';
 export class CheckSaveFormGuard implements CanDeactivate<EmployDetailComponent> {
     canDeactivate(component:EmployDetailComponent){
         alert("You can't leave this page without saving data");
-        return false;
+        return true;
     }
 }

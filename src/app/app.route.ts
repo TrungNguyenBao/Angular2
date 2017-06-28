@@ -13,11 +13,11 @@ import { CheckSaveFormGuard } from './guards/check-login-derective.component';
 const routing: Routes = [
     { path: '', component: HomeComponent },
     // {path:'',redirectTo:'employees',pathMatch:'full'},
-    { path: 'employees', component: HeaderComponent,canActivate:[CheckLoginGuards]},
+    { path: 'employees', component: HeaderComponent},
     { path: 'login', component: LoginComponent },
 
     {
-        path: 'employee-detail/:id', component: EmployDetailComponent,canDeactivate:[CheckSaveFormGuard],
+        path: 'employee-detail/:id', component: EmployDetailComponent,
 
         children: [
             { path: '', redirectTo: "tabone", pathMatch: 'full' },
